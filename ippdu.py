@@ -13,7 +13,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
-ippdu - command-line utility to control LIU-0816WN Smart PDU
+ippdu - command-line utility to control 0816-series Smart PDUs
 
 Usage examples
 --------------
@@ -213,7 +213,7 @@ def main(argv: List[str] | None = None) -> None:  # noqa: D401 - simple style
 
     if args.list:
         for num, name, state in list_outlets(base_url, auth, args.timeout):
-            print(f"{num:>2}  {name:<15}  {state}")
+            print(f"{num}  {name:<15}  {state}")
         return
 
     # From here on we need -s/--state
