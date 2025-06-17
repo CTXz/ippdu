@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# ippdu ─ run the ippdu Docker image as a drop-in CLI command.
+#
+# Every argument you pass to this script is forwarded to:
+#     docker run --rm ippdu …
+#
+# Example:
+#   ippdu -u USERNAME -p PASSWORD -H IP -l
+#   ippdu -u USERNAME -p PASSWORD -H IP -o 0 -s 1
+#
+
+set -euo pipefail
+
+IMAGE="ippdu"
+
+# If you built the image under a different tag, change $IMAGE:
+#   docker build -t ippdu:latest .
+# and then:
+#   IMAGE="ippdu:latest"
+
+exec docker run --rm "$IMAGE" "$@"
