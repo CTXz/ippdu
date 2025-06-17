@@ -27,9 +27,10 @@ LLM/AI tools were used in the creation of this utility. It is provided as-is, wi
 
 ### Docker (Recommended)
 
-A docker image is available in the repository which comes with all dependencies pre-installed. You can build it with the following command:
+A docker image is available in the repository which comes with all dependencies pre-installed. You can build it with the following commands:
 
 ```bash
+chmod +x ippdu.py
 docker build -t ippdu .
 ```
 
