@@ -1,6 +1,6 @@
-# ippdu - Command-line utility to control LIU-0816WN Smart PDU
+# ippdu - Command-line utility to control *0816 Smart PDU's
 
-The following repository contains a command-line utility to control the LIU-0816WN Smart PDU. It uses Playwright to trigger state changes (e.g., switching outlets on or off), and performs simple HTTP requests to query the current status of all outlets on the PDU.
+This repository provides a command-line utility for controlling Chinese 0816-series smart PDUs. These devices expose a web interface for outlet control. The CLI tool uses Playwright to trigger state changes (e.g., switching outlets on or off), and simple HTTP requests to retrieve the current status of each outlet.
 
 ## Example usage
 
